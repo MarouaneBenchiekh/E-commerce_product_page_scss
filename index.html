@@ -12,17 +12,24 @@
 </head>
 <body>
   <div id="overlay" class="overlay"></div>
-  <header class="header">
+  <header class="header container">
     <nav class="header__nav">
       <div class="header__container">
-        <a id="humburger" class="header__toggle hide_for_desktop" href="#">
+        <a id="humburger" class="header__toggle hide-for-desktop" href="#">
           <span></span>
           <span></span>
           <span></span>
         </a>
         <img class="header__logo" src="/images/logo.svg" alt="">
+        <div class="header__desMenu hide-for-mobile">
+            <a>Collections</a>
+            <a>Men</a>
+            <a>Women</a>
+            <a>About</a>
+            <a>Contact</a>
+        </div>
       </div>
-      <div id="menu" class="header__navMenu">
+      <div id="menu" class="header__mobMenu hide-for-desktop">
         <div class="header__links">
           <a>Collections</a>
           <a>Men</a>
@@ -31,14 +38,26 @@
           <a>Contact</a>
         </div>
       </div>
+
       <div class="header__cartProfile">
         <img class="header__cart" src="/images/icon-cart.svg" alt="">
         <img class="header__avatar" src="/images/image-avatar.png" alt="">
       </div>
     </nav>
-
+    <hr >
   </header>
-  
+  <main>
+    <section class="slide">
+      <div class="slide__images">
+        <img class="active slider" src="/images/image-product-1.jpg" alt="">
+        <img class="slider" src="/images/image-product-2.jpg" alt="">
+        <img class="slider" src="/images/image-product-3.jpg" alt="">
+        <img class="slider" src="/images/image-product-4.jpg" alt="">
+    </div>
+    <img id="next" class="slide__next hide-for-desktop" src="/images/icon-next.svg" alt="">
+    <img id="previous" class="slide__previous hide-for-desktop" src="/images/icon-previous.svg" alt="">
+  </section>
+  </main>
   
   
   

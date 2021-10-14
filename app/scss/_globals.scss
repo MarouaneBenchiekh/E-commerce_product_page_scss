@@ -15,7 +15,12 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   overflow-x: hidden;
 }
-
+.container {
+  padding: 1.0625rem 1.5rem;
+  @include breakpoints-up(large) {
+    padding: 2rem 8rem;
+  }
+}
 a,
 a:visited,
 a:hover {
